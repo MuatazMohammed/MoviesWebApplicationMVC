@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Movies.Controllers
 {
-    public class HomeController : Controller
+    public class MoviesController : Controller
     {
         public ActionResult Index()
         {
@@ -25,6 +25,10 @@ namespace Movies.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public string Welcome()
+        {
+            return "Moataz Welcome Message";
         }
     }
 }
