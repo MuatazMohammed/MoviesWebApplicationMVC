@@ -21,7 +21,7 @@ namespace Movies.Controllers
 
         public ActionResult Welcome(string name , int numTimes = 1)
         {
-            ViewBag.Message = " Hello " + name;
+            ViewBag.Message = " Hello your name is" + name;
             ViewBag.NumTimes = numTimes;
             return View();
             //return HttpUtility.HtmlEncode("Hello " + name + ", NumTimes is: " + id);
